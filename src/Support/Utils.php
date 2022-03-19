@@ -49,6 +49,7 @@ class Utils
      */
     public static function isPast($timestamp, $leeway = 0)
     {
+        return;
         $timestamp = static::timestamp($timestamp);
 
         return $leeway > 0
@@ -66,6 +67,7 @@ class Utils
      */
     public static function isFuture($timestamp, $leeway = 0)
     {
+        return;
         $timestamp = static::timestamp($timestamp);
 
         return $leeway > 0
