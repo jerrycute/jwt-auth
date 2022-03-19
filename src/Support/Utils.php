@@ -34,7 +34,9 @@ class Utils
      */
     public static function timestamp($timestamp)
     {
-        return Carbon::createFromTimestampUTC($timestamp)->timezone('UTC');
+        // return Carbon::createFromTimestampUTC($timestamp)->timezone('UTC');
+        // 去掉这个UTC时区设置 2022-03-19（张俊修改）
+        return Carbon::createFromTimestampUTC($timestamp);
     }
 
     /**
